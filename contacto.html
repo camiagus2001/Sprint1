@@ -12,26 +12,44 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="juego.html">Juegos</a></li>
+                <li><a href="venta.html">Venta</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <img src="Logo/LOGOOO.png" alt="Logo de VideoGamesLand" class="logo">
     </header>
-    <section class="contact-form">
+
+    <section class="contenido-contacto">
         <h1>Contacto</h1>
-        <p>Ponte en contacto con nosotros:</p>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+        <p>¿Tienes alguna pregunta o deseas encargar un juego específico que no encuentras en nuestra tienda? ¡No dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte.</p>
+        <form action="procesar_formulario.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn-enviar">Enviar</button>
         </form>
+        <div class="informacion-contacto">
+            <h2>Información de Contacto</h2>
+            <p>Correo Electrónico: info@gameworld.com</p>
+            <p>Teléfono: +123 456 789</p>
+            <p>Dirección: Buenos Aires </p>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2023 Mi Sitio de Videojuegos</p>
+        <p>&copy; 2023 Game World</p>
     </footer>
 </body>
 </html>

@@ -1,105 +1,85 @@
-/* Reset de márgenes y relleno para eliminar espacios predeterminados */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Estilos generales de la página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #ffffff;
 }
 
-/* Estilos para los elementos H1, H2 y P */
+
 h1, h2, p {
-    text-align: center; /* Centra el texto */
+    text-align: center;
 }
 
 h1 {
-    font-size: 36px; /* Tamaño del título principal */
-    color: #f0324b; /* Color del título principal */
-    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 2.5em; 
+    color: #3d9a54; 
+    margin-bottom: 1em; 
 }
 
 h2 {
-    font-size: 28px; /* Tamaño de los subtítulos */
-    color: #1e1e1e; /* Color de los subtítulos */
-    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 28px; 
+    color: #1e1e1e; 
+    margin-bottom: 1em; 
 }
 
 p {
-    font-size: 18px; /* Tamaño de los párrafos */
-    color: #555; /* Color de los párrafos */
-    line-height: 1.5; /* Espaciado entre líneas */
+    font-size: 1.2em;
+    color: #6f6f6f; 
+    line-height: 1.5; 
 }
 
-/* Estilos para la grilla de juegos */
+
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center; /* Centra horizontalmente los elementos en la grilla */
-    text-align: center; /* Centra horizontalmente el texto */
+    justify-content: center; 
+    text-align: center;    
+    margin: 10px;
 }
 
 .game-item {
-    background-color: #1e1e1e;
+    background-color: #273831;
     color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    padding: 1em;
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
-    display: flex; /* Hace que los elementos sean flexibles */
-    flex-direction: column; /* Los elementos se apilan verticalmente */
-    align-items: center; /* Centra horizontalmente el contenido */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 
-/* Efecto de transición al pasar el ratón por encima de los juegos */
+
+
 .game-item:hover {
     transform: translateY(-5px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para las imágenes de los juegos */
 .game-item img {
     width: 150px;
     height: 150px;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     border: 3px solid #fff;
     border-radius: 50%;
     background-color: #1e1e1e;
 }
 
-/* Resto de estilos (navbar, botones, etc.) */
 
-/* Efecto de transición al pasar el ratón por encima de los juegos */
-.game-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilos para las imágenes de los juegos */
-.game-item img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    background-color: #1e1e1e;
-}
-
-/* Estilos para el encabezado */
 header {
-    background-color: #333;
+    background-color: #46534a;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
-
+/* Esto seria para la seccion del header, donde dice Inicio, Juegos,etc */
 nav ul {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 nav ul li {
@@ -111,70 +91,53 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #f0324b;
+    color: #32f08b;
 }
 
-/* Estilos para el botón */
 .btn {
     display: inline-block;
-    background-color: #f0324b;
+    background-color: #32f08b;
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin: 0 auto; /* Centra horizontalmente el botón */
-    display: block; /* Hace que el botón ocupe todo el ancho disponible */
-    width: fit-content; /* Ajusta el ancho del botón al contenido */
+    margin: auto; 
+    display: block; 
+    width: fit-content; 
 }
 
 .btn:hover {
-    background-color: #d0283a;
+    background-color: #0f512e;
 }
-/* Estilos para el pie de página */
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color:#46534a;
     text-align: center;
     padding: 20px 0;
-    font-size: 14px;
+    font-size: 1em;
 }
 
-/* Estilos para la sección de introducción */
-.intro {
-    background-color: #111;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-}
 
-/* Centra el texto en la sección de introducción */
-.intro h2,
-.intro p {
-    text-align: center;
-}
-  /* Estilos para la grilla de artículos */
   .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
-/* Estilos para cada artículo */
 .article {
-    background-color: #f5f5f5;
+    background-color: #aeddcd;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para imágenes y videos */
 .article img,
 .article video {
     max-width: 100%;
@@ -183,12 +146,9 @@ footer {
     margin: 0 auto 10px;
 }
 
-/* Estilos para los enlaces "Leer más" */
 .read-more {
     display: block;
     text-align: center;
-    background-color: #007BFF;
-    color: white;
     padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -196,20 +156,231 @@ footer {
     cursor: pointer;
 }
 
-.read-more:hover {
-    background-color: #0056b3;
-}
-
  .lista_juegos
 {
-color:cadetblue;
+color:rgb(66, 107, 133);
 font-size: 18px;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 em
 {
-    color:cadetblue;
+    color:rgb(66, 107, 133);
     font-size: 18px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.inicio {
+    background-image: url('Images/bd05efb5dd8a7409cb6c4369aa9523ab.jpg');
+    background-size: auto;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.inicio-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.venta-videojuegos {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.venta-videojuegos-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.venta-videojuegos h2 {
+    font-size: 28px;
+}
+
+
+.guia-juegos-gratis {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.guia-juegos-gratis-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.guia-juegos-gratis h2 {
+    font-size: 28px;
+}
+
+
+.venta-videojuegos-image,
+.guia-juegos-gratis-image {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.venta-videojuegos-image img,
+.guia-juegos-gratis-image img {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+}
+
+
+.btn-destacado {
+    background-color: #6ed39d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-destacado:hover {
+    background-color: #327d56;
+}
+
+
+.contenido-venta {
+    text-align: center;
+    padding: 40px;
+}
+
+.grilla-juegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.juego {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.juego img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-comprar {
+    background-color:  #6ed39d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-comprar:hover {
+    background-color:#327d56;
+}
+
+.recomendaciones {
+    margin-top: 40px;
+}
+
+.recomendaciones h2 {
+    font-size: 24px;
+}
+
+.recomendaciones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recomendaciones li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.formulario-contacto {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formulario-contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #6ed39d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #22573a;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    max-width: 100%; 
+    height: auto; 
+    z-index: 1000; 
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
